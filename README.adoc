@@ -1,0 +1,41 @@
+= Interscript: Interoperable Script Conversion Systems for Python
+
+== Purpose
+
+This repository contains code for the Interscript Python runtime ("Interscript-Python").
+
+This software allows performing script conversions by using the
+https://github.com/interscript/maps[default set of Interscript maps]
+hosted at GitHub.
+
+Interscript is a project for interoperable script conversion systems
+and provides executable runtimes for multiple platforms.
+Full documentation available https://github.com/interscript/interscript/[here].
+
+== Integration
+
+This section provides instructions on how to utilize Interscript-Python
+with your application.
+
+Interscript-Python can be used as a Python library
+
+=== Configuration
+
+[source,shell]
+----
+$ pip install interscript
+----
+
+== Usage
+
+[source,javascript]
+-----
+import interscript
+interscript.load_map('bgnpcgn-ukr-Cyrl-Latn-2019')
+print(interscript.transliterate('bgnpcgn-ukr-Cyrl-Latn-2019', input()))
+-----
+
+
+== Copyright and license
+
+This is a Ribose project. Copyright Ribose.
