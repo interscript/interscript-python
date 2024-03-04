@@ -35,6 +35,38 @@ interscript.load_map('bgnpcgn-ukr-Cyrl-Latn-2019')
 print(interscript.transliterate('bgnpcgn-ukr-Cyrl-Latn-2019', input()))
 -----
 
+== Development
+
+Ensure you have used a bootstrap repository https://github.com/interscript/interscript
+and not just cloned this repo yourself, otherwise `./setup.sh` script won\'t work.
+
+`./setup.sh` script is used to build the maps from the `maps` repository using our Ruby
+Interscript implementation. Those maps are compiled to respective `.py` files inside
+`src/interscript/maps/` directory and are not included in this repository.
+
+=== Running tests
+
+[source,shell]
+---
+$ ./setup.sh
+$ pip install -e .
+$ pytest
+---
+
+=== Building package
+
+[source,shell]
+---
+$ ./setup.sh
+$ python -m build
+---
+
+=== Publishing package
+
+[source,shell]
+---
+$ twine publish file.whl
+---
 
 == Copyright and license
 

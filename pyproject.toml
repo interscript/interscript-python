@@ -5,7 +5,7 @@ authors = [
   { name="Ribose Inc.", email="open.source@ribose.com" },
 ]
 description = "Interoperable script conversion systems"
-readme = "README.adoc"
+readme = {file = "README.adoc", content-type = "text/plain"}
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -23,5 +23,5 @@ Homepage = "https://www.interscript.org"
 Issues = "https://github.com/interscript/interscript-python/issues"
 
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools", "wheel", "regex"]
+build-backend = "setuptools.build_meta"
