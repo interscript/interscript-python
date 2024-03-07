@@ -65,7 +65,7 @@ $ python -m build
 
 [source,shell]
 ---
-$ twine publish file.whl
+$ twine upload dist/file.whl
 ---
 
 == Copyright and license
