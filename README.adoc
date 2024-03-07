@@ -48,7 +48,7 @@ Interscript implementation. Those maps are compiled to respective `.py` files in
 
 [source,shell]
 ---
-$ ./setup.sh
+$ ./build.sh
 $ pip install -e .
 $ pytest
 ---
@@ -57,7 +57,7 @@ $ pytest
 
 [source,shell]
 ---
-$ ./setup.sh
+$ ./build.sh
 $ python -m build
 ---
 
