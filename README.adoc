@@ -48,6 +48,7 @@ Interscript implementation. Those maps are compiled to respective `.py` files in
 
 [source,shell]
 ---
+$ pip install regex pytest
 $ ./build.sh
 $ pip install -e .
 $ pytest
@@ -57,16 +58,15 @@ $ pytest
 
 [source,shell]
 ---
+$ pip install regex pytest
 $ ./build.sh
 $ python -m build
 ---
 
 === Publishing package
 
-[source,shell]
----
-$ twine upload dist/file.whl
----
+Edit pyproject.toml to contain a new version number, create a commit
+and add a git tag with that number.
 
 == Copyright and license
 
